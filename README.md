@@ -4,17 +4,28 @@ A web app for bridging USDC between Arc Testnet and other EVM chains (Ethereum S
 
 Built by **wija** while exploring the Arc blockchain ecosystem.
 
+## Warning — No Live Demo
+
+This app is intentionally not deployed publicly. Even though it runs on testnet only, the bridge requires a private key on the server side. Sharing a live deployment would expose that key, which is bad practice regardless of network. **Run it locally following the steps below.**
+
 ## What it does
 
 - Bridge USDC from any supported EVM chain to Arc Testnet
 - Bridge USDC from Arc Testnet back to any supported EVM chain
 - Send to a custom recipient address (optional)
 - Real-time USDC balance display for Arc and source chain
-- Transaction history with step-by-step CCTP progress (Approve → Burn → Attestation → Mint)
+- Transaction history with step-by-step CCTP progress (Approve, Burn, Attestation, Mint)
 
 ## How it works
 
 The bridge uses Circle's Cross-Chain Transfer Protocol (CCTP) — USDC is burned on the source chain and minted natively on the destination chain. No wrapped tokens, no liquidity pools.
+
+## Screenshots
+
+![Arc Bridge UI](public/screenshots/001.png)
+![Arc Bridge UI](public/screenshots/002.png)
+![Arc Bridge UI](public/screenshots/003.png)
+![Arc Bridge UI](public/screenshots/004.png)
 
 ## Built with
 
